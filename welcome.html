@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/medical-health-logo-design-templates_161396-404(1).jpg" type="image/x-icon">
+</head>
+<style>
+    body{
+        background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://img.freepik.com/free-photo/male-female-african-american-medical-staff-discussing-diagnostic-results_482257-122849.jpg?ga=GA1.1.257232303.1723629669&semt=ais_hybrid&w=740&q=80) no-repeat center center ;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }    
+</style>
+<body class="d-flex align-items-center justify-content-center vh-100">
+  <div class="text-center">
+    <h1 id="welcomeText" class="text-light"></h1>
+    <a href="index.html" class="btn btn-primary mt-3">Go to Home</a>
+  </div>
+
+  <script>
+    const activeUser = localStorage.getItem("activeUser");
+    if (activeUser) {
+      alert("This site says: Welcome " + activeUser);
+      document.getElementById("welcomeText").innerText = "Welcome," + activeUser + "!";
+    } else {
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

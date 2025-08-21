@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life-Harbor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="./img/medical-health-logo-design-templates_161396-404(1).jpg" type="image/x-icon">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script>
+    // Protect page before rendering
+    if (!localStorage.getItem("activeUser")) {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<style>
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(https://img.freepik.com/free-photo/male-female-african-american-medical-staff-discussing-diagnostic-results_482257-122849.jpg?ga=GA1.1.257232303.1723629669&semt=ais_hybrid&w=740&q=80)
+      no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  section,
+  footer,
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+  }
+</style>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top" data-aos="fade-down">
+    <div class="container">
+      <a class="navbar navbar-brand d-flex align-items-center" href="#">
+        <img src="./img/medical-health-logo-design-templates_161396-404(1).jpg" alt="logo" width="60"
+          height="60" class="d-inline-block align-top me-2" data-aos="zoom-in">
+        <span class="fw-bold fs-4 text-primary" data-aos="fade-left">Life-Harbor</span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="100"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="200"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="300"><a class="nav-link" href="doctors.html">Doctors</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="400"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="500"><a class="nav-link text-danger" href="index2.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="text-center text-white d-flex align-items-center"
+    style="background: url('https://source.unsplash.com/1600x900/?hospital,doctor') no-repeat center center/cover; height: 100vh;">
+    <div class="container">
+      <h1 class="display-3 fw-bold" data-aos="zoom-in">Welcome to Life-Harbor</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="200">Your health is our priority.</p>
+      <a href="services.html" class="btn btn-success btn-lg mt-3" data-aos="fade-up" data-aos-delay="400">Explore Services</a>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4 text-primary" data-aos="fade-up">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <i class="bi bi-heart-pulse text-success display-4"></i>
+              <h5 class="card-title mt-3">Consultation</h5>
+              <p class="card-text">Talk to our trusted doctors online or in person.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <i class="bi bi-capsule text-info display-4"></i>
+              <h5 class="card-title mt-3">Pharmacy</h5>
+              <p class="card-text">Get your medicines delivered to your home quickly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <i class="bi bi-hospital text-danger display-4"></i>
+              <h5 class="card-title mt-3">Emergency</h5>
+              <p class="card-text">24/7 ambulance & emergency services at your call.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3" data-aos="fade-up">
+    <p class="mb-0">© 2025 Life-Harbor. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration
+      once: true,     // run only once
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Life-Harbor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/medical-health-logo-design-templates_161396-404(1).jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script>
+    // Protect page before rendering
+    if (!localStorage.getItem("activeUser")) {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" data-aos="fade-down">
+    <div class="container">
+      <a class="navbar navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./img/medical-health-logo-design-templates_161396-404(1).jpg" alt="logo" width="60"
+          height="60" class="d-inline-block align-top me-2" data-aos="zoom-in">
+        <span class="fw-bold fs-4 text-primary" data-aos="fade-left">Life-Harbor</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active fw-bold text-primary" href="about.html" data-aos="fade-down" data-aos-delay="100">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" data-aos="fade-down" data-aos-delay="200">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="doctors.html" data-aos="fade-down" data-aos-delay="300">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-aos="fade-down" data-aos-delay="400">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="#" onclick="logout()" data-aos="fade-down" data-aos-delay="500">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="py-5 bg-light" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="text-center fw-bold mb-4 text-primary" data-aos="zoom-in">About Life-Harbor</h2>
+          <p class="lead text-center mb-5" data-aos="fade-up">
+            At <strong class="text-primary">Life-Harbor</strong>, we believe health is more than just the absence of illness — 
+            it’s about balance, vitality, and the ability to thrive in every stage of life. 
+            Our name reflects our mission: to be a safe harbor, a trusted place where individuals and families 
+            can find guidance, support, and solutions for their wellness journey.
+          </p>
+          <div class="row">
+            <div class="col-md-6 mb-4" data-aos="fade-right">
+              <h4 class="fw-semibold text-primary">🌍 Our Vision</h4>
+              <p>
+                To create a world where everyone has a safe place to turn for health, healing, 
+                and wellness — no matter who they are or where they come from.
+              </p>
+            </div>
+            <div class="col-md-6 mb-4" data-aos="fade-left">
+              <h4 class="fw-semibold text-primary">💡 Our Mission</h4>
+              <ul>
+                <li>Deliver reliable health information and care solutions.</li>
+                <li>Empower individuals with the knowledge and tools they need to live healthier, fuller lives.</li>
+                <li>Combine modern healthcare with a human touch, ensuring compassion in everything we do.</li>
+              </ul>
+            </div>
+          </div>
+          <h4 class="fw-semibold mt-4 text-primary" data-aos="fade-up">🤝 Why Choose Life-Harbor?</h4>
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100"><strong>Trusted Care:</strong> We prioritize safety, accuracy, and empathy.</li>
+            <li data-aos="fade-up" data-aos-delay="200"><strong>Holistic Approach:</strong> Addressing body, mind, and spirit for true well-being.</li>
+            <li data-aos="fade-up" data-aos-delay="300"><strong>Community Driven:</strong> Building a supportive network where care goes beyond treatment.</li>
+            <li data-aos="fade-up" data-aos-delay="400"><strong>Innovation & Growth:</strong> Using modern health technologies to serve you better.</li>
+          </ul>
+          <p class="mt-4" data-aos="fade-up" data-aos-delay="500">
+            At <strong class="text-primary">Life-Harbor</strong>, your well-being is our compass. Just as a harbor protects and nurtures ships through 
+            calm waters and storms, we aim to provide you with the care, knowledge, and support you need to 
+            navigate life’s health challenges with confidence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3" data-aos="fade-up">
+    <p class="mb-0">© 2025 Life-Harbor. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const activeUser = localStorage.getItem("activeUser");
+    if (!activeUser) window.location.href = "login.html";
+    function logout(){
+      localStorage.removeItem("activeUser");
+      window.location.href = "login.html";
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

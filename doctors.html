@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - Life-Harbor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/medical-health-logo-design-templates_161396-404(1).jpg" type="image/x-icon">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+
+<script>
+    // Protect page before rendering
+    if (!localStorage.getItem("activeUser")) {
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container">
+            <a class="navbar navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./img/medical-health-logo-design-templates_161396-404(1).jpg" alt="logo" width="60"
+                    height="60" class="d-inline-block align-top me-2" data-aos="zoom-in">
+                <span class="fw-bold fs-4 text-primary" data-aos="fade-left">Life-Harbor</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-primary" href="doctors.html">Doctors</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#" onclick="logout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Doctors Section -->
+        <section class="container py-5">
+            <h2 class="text-center text-primary mb-4" data-aos="zoom-in">Meet Our Doctors</h2>
+            <div class="row g-4">
+                <!-- Doctor 1 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card shadow text-center">
+                        <img src="./img/woman-medic-wearing-stethoscope-red-uniform.jpg" class="card-img-top"
+                            alt="Doctor">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Sarah Johnson</h5>
+                            <p class="card-text">Cardiologist with 10+ years of experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card shadow text-center">
+                        <img src="./img/laughing-ethnic-doctor.jpg" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Michael Peters</h5>
+                            <p class="card-text">Specialist in Internal Medicine & Primary Care.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card shadow text-center">
+                        <img src="./img/africa-humanitarian-aid-doctor-getting-ready-work.jpg" class="card-img-top"
+                            alt="Doctor">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Anita Rejoice</h5>
+                            <p class="card-text">Pediatrician passionate about child healthcare.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 4 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card shadow text-center">
+                        <img src="./img/confident-male-nurse-hospital-hallway.jpg" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. David Brown</h5>
+                            <p class="card-text">Neurologist focusing on brain & nervous system care.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 5 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card shadow text-center">
+                        <img src="./img/eben-kassaye-hgD5IfjyIt8-unsplash.jpg" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Angela White</h5>
+                            <p class="card-text">Dermatologist specializing in skincare and treatments.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 6 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card shadow text-center">
+                        <img src="./img/cheerful-ethnic-medic-with-papers.jpg" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Samuel Osei</h5>
+                            <p class="card-text">Orthopedic surgeon helping patients regain mobility.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Doctor 7 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card shadow text-center">
+                        <img src="./img/francisco-venancio-M4Xloxsg0Gw-unsplash.jpg" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Grace Nwosu</h5>
+                            <p class="card-text">Gynecologist dedicated to women’s reproductive health.</p>
+                        </div>
+                    </div>
+                </div>
+             
+                <!-- Doctor 8 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card shadow text-center">
+                        <img src="./img/andrew-oklu-TZUjC1TyPBg-unsplash.jpg" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Aliyah Munurudeen</h5>
+                            <p class="card-text">A doctor with 6 years work experience in caring for mothers and their
+                                unborn babies with passion offering prenatal and postnatal care.</p>
+                        </div>
+                    </div>
+                </div>
+
+                   <!-- Doctor 9 -->
+                   <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card shadow text-center">
+                        <img src="./img/social-worker-taking-care-senior-woman.jpg" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Divine Nwokocha</h5>
+                            <p class="card-text">Home-Health service Personnel with 7+ years experience, and
+                                certification from W.H.O.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 Life-Harbor. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <script>
+        const activeUser = localStorage.getItem("activeUser");
+        if (!activeUser) window.location.href = "login.html";
+        function logout() {
+            localStorage.removeItem("activeUser");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+
+</html>
