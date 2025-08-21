@@ -11,6 +11,13 @@
 
   <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script>
+    // Protect page before rendering
+    if (!localStorage.getItem("activeUser")) {
+      window.location.href = "login.html";
+    }
+  </script>
 </head>
 <style>
   body {
@@ -21,6 +28,7 @@
     margin: 0;
     padding: 0;
   }
+
   section,
   footer,
   .navbar {
@@ -39,11 +47,11 @@
       </a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item" data-aos="fade-down" data-aos-delay="100"><a class="nav-link" href="login.html">About</a></li>
-          <li class="nav-item" data-aos="fade-down" data-aos-delay="200"><a class="nav-link" href="login.html">Services</a></li>
-          <li class="nav-item" data-aos="fade-down" data-aos-delay="300"><a class="nav-link" href="login.html">Doctors</a></li>
-          <li class="nav-item" data-aos="fade-down" data-aos-delay="400"><a class="nav-link" href="login.html">Contact</a></li>
-          <li class="nav-item" data-aos="fade-down" data-aos-delay="500"><a class="nav-link text-danger" href="login.html">Login</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="100"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="200"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="300"><a class="nav-link" href="doctors.html">Doctors</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="400"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" data-aos="fade-down" data-aos-delay="500"><a class="nav-link text-danger" href="index.html">Logout</a></li>
         </ul>
       </div>
     </div>
@@ -55,7 +63,7 @@
     <div class="container">
       <h1 class="display-3 fw-bold" data-aos="zoom-in">Welcome to Life-Harbor</h1>
       <p class="lead" data-aos="fade-up" data-aos-delay="200">Your health is our priority.</p>
-      <a href="login.html" class="btn btn-success btn-lg mt-3" data-aos="fade-up" data-aos-delay="400">Explore Services</a>
+      <a href="services.html" class="btn btn-success btn-lg mt-3" data-aos="fade-up" data-aos-delay="400">Explore Services</a>
     </div>
   </header>
 
